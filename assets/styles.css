@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--bg-dark: #000033;
+	--bg-light: #ccccff;
+	--text: #e6e6ff;
+	--btn-color: #4d4dff;
+	--pad: 15px;
+	--mb: 10px;
+}
+
+body {
+	text-align: center;
+	font-family: 'Poppins', sans-serif, Calibri;
+	font-size: 20px;
+	position: relative;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.1em;
+}
+
+header {
+	width: 100vw;
+	height: 80px;
+	background-color: var(--bg-dark);
+	color: var(--text);
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	position: fixed;
+	z-index: 5;
+}
+
+aside {
+	background-color: var(--bg-light);
+	box-sizing: border-box;
+	width: 20%;
+	min-height: 100vh;
+	color: #000033;
+	padding-top: 180px;
+	padding-bottom: 80px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 3;
+	overflow-y: scroll;
+}
+
+main {
+	min-height: 150px;
+	padding: 80px 0;
+	padding-left: 20%;
+}
+
+footer {
+	width: 100vw;
+	background-color: var(--bg-dark);
+	position: fixed;
+	bottom: 0;
+	color: var(--text);
+	padding: 20px 0;
+	z-index: 5;
+}
+
+footer p {
+	font-size: .5em;
+}
+
+header, footer, main, aside {
+	font-size: 1em;
+}
+
+input, select {
+	width: 50%;
+	border-width: 1px;
+}
+
+label {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+}
+
+.types {
+	padding: 20px;
+}
+
+.component_name, .create_component {
+	background-color: var(--btn-color);
+	color: var(--text);
+	padding: var(--pad);
+	font-size: .7em;
+	border: none;
+	border-radius: 5px;
+	width: 60%;
+	margin: var(--mb) 0;
+}
+
+.create_component {
+	padding: 5px;
+	font-size: 1em;
+	width: 80%;
+}
+
+div.elements {
+	font-size: .7em;
+	display: none;
+	box-shadow: 0 0 5px var(--btn-color);
+	width: 95%;
+	padding: 7px;
+	margin-bottom: var(--mb);
+}
+
+.active {
+	background-color: var(--bg-light);
+	padding-bottom: 5px;
+	border-bottom: 1px solid var(--btn-color);
+	width: 80%;
+	color: var(--btn-color);
+	margin-bottom: var(--mb);
+}
+
+.types, div.show {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.info {
+	font-size: .6em;
+	text-align: justify;
+	padding: 15px;
+	font-style: italic;
+}
+
+.component_container {
+	width: 100%;
+	margin: 10px 0;
+	position: relative;
+}
+
+.created_component {
+	margin: 0 auto;
+}
+
